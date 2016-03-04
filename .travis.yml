@@ -7,7 +7,6 @@ deploy:
     access_key_id: AKIAJNDKWK5INDMMD7PQ
     secret_access_key: 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
     bucket: eunoia-labs.staging
-    local-dir: dist
     acl: public_read
     on:
       branch: master
