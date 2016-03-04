@@ -17,9 +17,9 @@ app.use(bodyParser.json());
 var port     = process.env.PORT || 8080; // set our port
 
 var mongoose   = require('mongoose');
-require('dotenv').config();
+//require('dotenv').config();
 //mongoose.connect('mongodb://process.env.DB_USER:process.env.DB_PASS@process.env.DB_HOST');
-mongoose.connect('mongodb://process.env.DB_USER:process.env.DB_PASS@ds019498.mlab.com:19498/users'); // connect to our database
+mongoose.connect('mongodb://user:password@ds019498.mlab.com:19498/users'); // connect to our database
 var User     = require('./app/models/user');
 
 // ROUTES FOR OUR API
