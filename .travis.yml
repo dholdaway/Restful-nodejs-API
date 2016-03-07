@@ -1,9 +1,12 @@
 language: node_js
 node_js:
-          - 4.2.3
+- 4.2.3
 deploy:
-  - provider: s3
-    access_key_id: AKIAJNDKWK5INDMMD7PQ
-    secret_access_key: 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
-    bucket: eunoia-labs.staging
-    skip_cleanup: true
+  provider: s3
+  access_key_id: AKIAJNDKWK5INDMMD7PQ
+  secret_access_key:
+    secure: J1/mm3GaXkMpOgsfIy9JOQGcIHE7sAx1Srq/KBDJZAQBrEJFUuTbmzrlphElrwHzf2jaLYc0C8cdNvWRW5XydbQu8/MnOM0PDwM+HfC8ra2gtG6coThOW/3jpMc9I5WACSOZMCov7EoHiF1eFKT1Bmt6TNIX9n5EhC4TiXa2fTUogaS7faMwhx/efKD/x40OVwlgHxC3lwkta78300w87Vk+m3J/642XkIMfXg5Okr5J7Eoxh8xyxSzrixY+XKhvJqbncEGJDAyWO3UpkjJL3Mxgf1JiJf8ZlA+8U8s4O25TZQ3C02tDPYcPhaz51u7jZHmr/s8QictueNxiHplI9Gpkt0Z9Ylk3+vTllgAsbFK2TerTCnoB62VsYxdsgOKUr/afAk6YfWNBLYtzU8Ov1MAbeyxephJwT2hEaCN9dKoEZxuzlz3NJAwV85Cw8nZBsxGC7pSeHQSsDuh6JeU+RFoAQv+j4PMzIR4TyCXj/MKsz5A1x9jV1zHJuc/izV8CP9vvoHUwRaSCFblT1dN+IIsn/ILxS6RfsKr63lM+TTG2DRFwW73csIrqP1fhiPpPN3SOT7QG0XyhYkwmJScWzLwJGrY8zTzaCYR5JgRg74Am8usMydB91+33yvkit8uECyrW/4vCAXAtOwoi5t6MErRVUjOxoChQ6ISwOITE/J8=
+  bucket: eunoia-labs.staging
+  acl: public_read_write
+  on:
+    repo: dholdaway/Restful-nodejs-API
