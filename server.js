@@ -1,6 +1,5 @@
 // BASE SETUP
 // =============================================================================
-//just a quick change
 // call the packages we need
 var express    = require('express');
 var bodyParser = require('body-parser');
