@@ -3,11 +3,7 @@ node_js:
           - 4.2.3
 deploy:
   - provider: s3
-    skip_cleanup: true
     access_key_id: AKIAJNDKWK5INDMMD7PQ
     secret_access_key: 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
     bucket: eunoia-labs.staging
-    acl: public_read
-    on:
-      branch: master
-    endpoint: eunoia-labs.staging.s3-website-eu-west-1.amazonaws.com
+    skip_cleanup: true
