@@ -10,3 +10,4 @@ deploy:
   acl: public_read_write
   on:
     repo: dholdaway/Restful-nodejs-API
+  endpoint: eunoia-labs.staging.s3-website-eu-west-1.amazonaws.com
