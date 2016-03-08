@@ -11,6 +11,10 @@ deploy:
         on:
         repo: dholdaway/Restful-nodejs-API
         region: eu-west-1
+after_success:
+        cd ~/node-api
+        zip -r Main-0.0.1.zip *
+
 file:
             - "README.md"
                   - "-Main-0.0.1.zip"
