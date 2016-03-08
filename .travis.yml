@@ -8,7 +8,7 @@ before_install:
 
 after_success:
         cd ~/node-api
-        zip -r Main-0.0.1.zip *
+        zip -r Main-0.0.2.zip *
 
 deploy:
         provider: s3
