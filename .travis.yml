@@ -2,10 +2,6 @@ language: node_js
 node_js:
 - "4.2.3"
 
-after_success:
-cd ~/node-api
-zip -r Main-0.0.1.zip *
-
 file:
 - "Main-0.0.1.zip"
 
